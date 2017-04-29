@@ -1,0 +1,1 @@
+# django-preview-image-widget

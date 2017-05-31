@@ -4,17 +4,11 @@ from django.forms import FileInput
 
 class SimpleImageWidget(FileInput):
     """
-    Autor: Milton Lenis
-    Fecha: Abril 2 2017
-    Widget para archivos de tipo imágen para mejorar un poco la apariencia visual de manera sencilla.
+    Widget for displaying a image-preview in file fields.
     """
     def __init__(self, *args, **kwargs):
         """
-        Autor: Milton Lenis
-        Fecha: Abril 2 2017
-        Método constructor para agregar el atributo 'simple_image_widget' al campo y poder activarlo desde javascript
-        :param args: Argumentos de la función
-        :param kwargs: Keyword arguments de la función
+        Adds a
         """
         kwargs['attrs'] = {
             'simple_image_widget': 1

@@ -21,10 +21,9 @@ class PreviewImageWidget(FileInput):
         """
         if value:
             preview = {"data-preview": settings.MEDIA_URL + str(value)}
-            if attrs:
-                attrs.update(preview)
-            else:
-                attrs = preview
+            if not attrs:
+                attrs = {}
+            attrs.update(preview)
         return super(PreviewImageWidget, self).render(name, value, attrs=attrs)
 
     class Media:

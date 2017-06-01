@@ -6,6 +6,7 @@ class PreviewImageWidget(FileInput):
     """
     Widget for displaying a image-preview in file fields.
     """
+
     def __init__(self, *args, **kwargs):
         """
         Adds a 'preview_image_widget' attr for the input

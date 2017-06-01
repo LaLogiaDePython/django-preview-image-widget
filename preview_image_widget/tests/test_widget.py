@@ -1,11 +1,11 @@
-#coding: utf-8
+# coding: utf-8
 
 import django
 from django.conf import settings
 from django.test import TestCase
 
-from preview_image_widget.widgets import PreviewImageWidget
 from preview_image_widget.tests.utils import render_django110, render_django111
+from preview_image_widget.widgets import PreviewImageWidget
 
 
 class TestSimpleImageWidget(TestCase):

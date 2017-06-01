@@ -8,6 +8,7 @@ except ImportError:
     def get_default_renderer():
         return None
 
+
 def render_django111(**kwargs):
     """
     Renders the widget using the django 1.11+ way
@@ -18,6 +19,7 @@ def render_django111(**kwargs):
     renderer = get_default_renderer()
     context = widget.get_context(kwargs['name'], kwargs['value'], kwargs['attrs'])
     return mark_safe(renderer.render('django/forms/widgets/input.html', context))
+
 
 def render_django110(**kwargs):
     """

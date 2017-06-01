@@ -18,7 +18,7 @@
     display: block;
     padding-top:10px;
 }
-input[simple_image_widget] {
+input[preview_image_widget] {
     position: absolute;
     visibility: hidden;
     width: 0;

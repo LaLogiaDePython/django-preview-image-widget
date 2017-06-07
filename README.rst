@@ -1,11 +1,11 @@
 Django Preview Image Widget
 ===========================
 
-    An ImageField preview widget application
+    A very simple ImageField preview widget
 
 |status-image| |coverage-image|
 
-An application for displaying the image preview of a ImageField in a DjangoForm
+An application for displaying the image preview of an ImageField in a DjangoForm
 using html, javascript and css
 
 Features:
@@ -47,6 +47,11 @@ To run the tests against configured environments:
 
 1. Install tox
 2. Run tox
+
+Dependencies:
+-------------
+
+Bootstrap 3+
 
 License:
 --------

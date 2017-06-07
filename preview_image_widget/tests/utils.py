@@ -11,9 +11,9 @@ except ImportError:
 
 def render_django111(**kwargs):
     """
-    Renders the widget using the django 1.11+ way
+    Renders the widget using the django >= 1.11 way
     :param kwargs: key word arguments with the test data
-    :return: widget rendered
+    :return: rendered widget
     """
     widget = kwargs.pop("widget")
     renderer = get_default_renderer()
@@ -23,9 +23,9 @@ def render_django111(**kwargs):
 
 def render_django110(**kwargs):
     """
-    Renders the widget using the django 1.11+ way
+    Renders the widget using the django <= 1.10 way
     :param kwargs: key word arguments with the test data
-    :return: widget rendered
+    :return: rendered widget
     """
     final_attrs = {'type': 'file', 'name': kwargs['name']}
     final_attrs.update(kwargs['attrs'])

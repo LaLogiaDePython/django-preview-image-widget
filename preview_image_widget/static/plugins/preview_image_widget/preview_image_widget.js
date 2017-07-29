@@ -8,10 +8,10 @@ $(document).on('mouseleave', '#preview', function(e) {
 
 $(document).on('click', '#file-select', function(e) {
     e.preventDefault();
-    $("[simple_image_widget]").click();
+    $("[preview_image_widget]").click();
 });
 
-$(document).on('change', '[simple_image_widget]', function(e) {
+$(document).on('change', '[preview_image_widget]', function(e) {
     var file = (this.files[0].name).toString();
     var reader = new FileReader();
     
@@ -20,13 +20,13 @@ $(document).on('change', '[simple_image_widget]', function(e) {
     
      reader.onload = function (e) {
          $('#preview img').attr('src', e.target.result);
-     }
+     };
      
      reader.readAsDataURL(this.files[0]);
 });
 
 $(document).ready(function(){
-    var $ImageWidget = $("[simple_image_widget]");
+    var $ImageWidget = $("[preview_image_widget]");
     var preview = $ImageWidget.attr("data-preview");
     if(typeof preview != "undefined"){
         var img = preview;

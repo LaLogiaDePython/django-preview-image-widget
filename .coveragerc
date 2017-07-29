@@ -1,0 +1,5 @@
+[run]
+source = preview_image_widget
+omit =
+    */tests/*
+    */apps.py
